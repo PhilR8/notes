@@ -24,8 +24,6 @@ test suite
 - Check to see if I use Vue Devtools
 - CSS `@scope` block -- investigate this new feature proposal
 - Nuxt presenter was using the Arc browser. I've seen this before -- look into again
-  - Drizzle ORM used by Nuxt presenter
-  - Nuxt extension for vim/nvim
 
 ### Parking lot for generic thoughts
 
@@ -85,7 +83,7 @@ you what's wrong with it
 
 ### Opening remarks/business/housekeeping
 
-- The venue has a warm-up comic.  Doing well warming up the crowd
+- The venue has a warm-up comic/MC.  Doing well warming up the crowd
 - Wifi not working well; sound cutting in and out
 - Conference Reception -- tonight, Howlin' Wolf
   - Open bar and "alligator bites" and other food
@@ -131,7 +129,6 @@ you what's wrong with it
 - Build > Server > Edge > Client
   - Compute happening at all steps -- or can happen?
   - Where is the best place?  When is the best time to render?
-
 - SSG -- Static Site Generation
   - Rendering happens on: Build
   - CI/CD (GitHub Pages, Netlify) re-invigorated this pattern via automation
@@ -148,7 +145,6 @@ you what's wrong with it
   - Rendering happens on: Edge
   - Abilities:
     - Geolocation
-
 - "Which one is the best, Phil?"
   - Answer: "It depends."
   - Question: "It depends on what?"
@@ -163,7 +159,6 @@ you what's wrong with it
     - Deferred Static Generation (DSG)
   - **Don't generate in build**. Wait until the first time it's requested
     - (His opinion)
-
 - "Deciding demands questions."
 - *Demonstration*
   - Nuxt -- route-based rendering configuration.  Pretty cool
