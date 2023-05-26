@@ -195,7 +195,6 @@ good state management**
 - Nuxt is a web framework for creating Vue applications
   - SSR, CSR, SSG, ESR, Hooks, File System Router, Auto Imports, Data fetching
     - Very fully featured, endless features.  Overkill for us.
-
 - The "Edge"
   - a limited JS environment running on CDN nodes
   - code replicated to many nodes (Cloudflare, etc)
@@ -209,13 +208,11 @@ good state management**
       - Although Nuxt has polyfills etc
     - Total size limit: 5MB
   - DBs are coming to the Edge
-
 - *Live coding demonstration*
   - creating a table in a sqlite DB with Drizzle looked easy and fun
   - Migrations happen automatically with Nuxt
   - Nuxt devtools looks very cool
   - Nuxt 3 -- HMR on the server if only server is updated
-
 - Very cool demo, Coffee or Tea app with GitHub authentication
 
 ### Patterns for Large Scale Vue.js applications -- Daniel Kelly (VueSchool)
@@ -404,3 +401,6 @@ store app
   - Part of it is Open Source
     - With some more niche/complicated components behind a paywall
   - Looks really nice.
+
+### The Next Vuetify -- John Leider
+- Version 3.0
