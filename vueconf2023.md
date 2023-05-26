@@ -41,8 +41,8 @@ test suite
   - Do we even care about Storybook at all at this point?
   - Depending on LOE, this might be a better alternative
 - Live coding exercise from Nuxt CEO
-  - demonstrated incredible utility for rapid prototyping. 
-  - makes it clear why people like TailwindCSS.
+  - demonstrated used TailwindCSS, which has incredible utility for rapid prototyping.
+    - makes it clear why people like TailwindCSS
   - Nuxt CEO uses CoPilot, as shown and mentioned during his live demo
 - `pre` tag once again shown as being very useful for debugging raw text/JSON/etc
 
@@ -71,11 +71,11 @@ you what's wrong with it
 
 - Vue 3 upgrade sooner rather than later
   - Vuetify seems ready
-  - let use latch on and use these great tools that ere demonstrated
-  - VueUse seems especially helpful
+  - I wanna use all these cool tools that were demonstrated, and best to get to Vue 3 first
+    - VueUse seems especially helpful
   - Want to upgrade to Vue 3 before adding complexity
   - We're well positioned now
-    - the longer we wait, the harder it will be
+  - the longer we wait, the harder it will be
 - Cypress Component Tests -- *We can do them now*
   - Demo made them seem extremely easy to enable if you're on latest version of Cypress
     - We're on the latest Major Version, and should upgrade to latest Minor Version
