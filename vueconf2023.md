@@ -1,56 +1,72 @@
 # VueConf 2023
 
+### Action Items -- Project
+
+- **Remove Vetur, install Volar** (assuming there is a vim/nvim extension)
+  - Official recommendation is that Vetur is outdated, deprecated
+  - Better for composition API
+  - [CoC-Volar](https://github.com/yaegassy/coc-volar)
+- **Prettier/formatting on save** -- document and force team to do this
+- **Typescript** -- can we add this to our current Vue2/Vite4 pipelines?
+  - Wait until Vue 3 upgrade?
+  - Investigate a single TS file and go from there
+- **Component Testing**
+  - Demonstration shows that with out setup, it should be simple/painless
+  - Create very basic component test based on a single little component
+  - Better understand `cy.validate` and re-using Component test code in an E2E
+test suite
+- **VueUse** -- research how to integrate
+  - Probably after Vue 3
+  - Seems *extremely* useful
+
+### Action Items -- Personal
+
+- Check to see if I use Vue Devtools
+- CSS `@scope` block -- investigate this new feature proposal
+- Nuxt presenter was using the Arc browser. I've seen this before -- look into again
+  - Drizzle ORM used by Nuxt presenter
+  - Nuxt extension for vim/nvim
+
 ### Parking lot for generic thoughts
 
 - We should investigate using TypeScript (TS)
   - How big of a lift?
   - When we upgrade to Vue 3, do it then?
-- Vue Macros
-  - enhanced Vue 2.7 support
-- `computed` -- cache expensive properties.  Good to remember/be reminded
-- `composables`
-- "phrasing context"
-  - `divs` can't be in `p` tags, for example.  Browser "fixes" that for you and
-  swaps them if you make this mistake
-  - upcoming improvements for SSR hydration will better warn people about this
 - HighCharts highlighted as having "great" Vue integration by Alex Harding
   - Keep in mind if site needs data visualizations
-- "Tangibility Principle" -- once users get their hands on it, they can tell
-you what's wrong with it
-- Developer patters can become libraries
+- Need to fast track Vue 3 upgrade so we can take advantage of all this stuff
+- Histoire -- Vue-specific Storybook alternative (also supports Svelte)
 - Live coding exercise from Nuxt CEO makes it clear why people like TailwindCSS.
 - Nuxt CEO uses CoPilot, as shown and mentioned during his live demo
 - `pre` tag once again shown as being very useful for debugging raw text/JSON/etc
-- Highlighting here: TailwindCSS demonstrated incredible utility for rapid prototyping
+- Highlighting here again: TailwindCSS demonstrated incredible utility for rapid
+prototyping
   - I can see why people use it and love it.
 - Cypress-Cucumber -- tests in "human readable" code
-- Need to fast track Vue 3 upgrade so we can take advantage of all this stuff
-- Histoire -- Vue-specific Storybook alternative (also supports Svelte)
+
+### Vue/web dev/etc thoughts/reminders/etc
+
+- `computed` properties -- main use is to cache expensive properties.
+Good to remember/be reminded of that.
+- `composables`
+  - encapsulate and re-use stateful logic
+  - We don't use these -- keep in mind moving forward
+  - Examples of places where these could be useful:
+    - Shared logic between Resources/Search pages
 - Destructuring assignment for props/etc in Vue ecosystem still very fragile
   - Vue 3.3 allows destructured props to maintain reactivity, **BUT**
   - Pinia and other libraries still do not allow it
-
-### Action Items
-
-- Investigate `Harness-Vue` Library (harnessjs.org)
-  - based on Visualization talk
-- CSS `@scope` block -- investigate this new feature proposal
-- Nuxt presenter was using the Arc browser. I've seen this before -- look into again
-  - Drizzle ORM used by Nuxt presenter
-  - Nuxt extension for vim/nvim
-- **Remove Vetur, install Volar** (assuming there is a vim/nvim extension)
-  - [CoC-Volar](https://github.com/yaegassy/coc-volar)
-- Prettier on save -- document and force team to do this
-- Investigate a single TS file -- can we add this to our current Vue2/Vite4 pipelines?
-- Create very basic component test based on a single little component.
-- Better understand `cy.validate` and re-using Component test code in an e2e
-test suite
-- Check to see if I use Vue Devtools
-- **VueUse** -- research how to integrate
-  - Probably after Vue 3
-  - Seems *extremely* useful
+- "phrasing context"
+  - [MDN Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#phrasing_content)
+  - `divs` can't be in `p` tags, for example.  Browser "fixes" that for you and
+  swaps them if you make this mistake
+  - upcoming improvements for SSR hydration will better warn people about this
+- "Tangibility Principle" -- once users get their hands on it, they can tell
+you what's wrong with it
+  - This was why we had interactive prototypes back in the day
 
 ### eRegs-specific thoughts
+
 - Vue 3 upgrade sooner rather than later
   - Vuetify seems ready
   - let use latch on and use these great tools that ere demonstrated
@@ -174,6 +190,8 @@ good state management**
   - Resources page probably could have benefited -- URL params got unwieldy
     - Think about this for any further enhancements to Search Page
   - This person's solution: `Harness-Vue` library
+    - [Harnessjs.org](https://harnessjs.org/)
+    - Developer patterns can become libraries
 
 ### Vue to the Edge (Nuxt) -- Sebastian Chopin
 
@@ -325,6 +343,7 @@ a normal e2e test
     - Will Vue be widely used enough for this to be valuable, though?
 
 ### Proven Pinia Patterns -- Adam Jahr
+
 - "Next evolution of State Management"
   - Specifically Global State
 - Why Pinia?
@@ -350,3 +369,12 @@ a normal e2e test
   - can take an object of function as argument
 - Can be used in router
   - example: when user navigates home, clear state with `$reset`
+
+### Build and Deploy Mobile Apps with Nuxt Ionic -- Cecelia Martinez
+
+- Nuxt Ionic Module
+- Benefits of Nuxt, brought to mobile
+- Not super relevant since we don't use Nuxt and don't have a need for an app
+store app
+- Live coding demonstration
+  - Looks pretty nice and straight forward -- native elements
