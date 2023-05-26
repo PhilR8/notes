@@ -69,7 +69,10 @@ you what's wrong with it
 
 - Vue 3 upgrade sooner rather than later
   - Vuetify seems ready
-  - I wanna use all these cool tools that were demonstrated, and best to get to Vue 3 first
+    - Will be really ready with release of 2.7 (end of June 2023) 
+    - finally will have a detailed migration guide
+  - I wanna use all these cool tools that were demonstrated, and best to get to
+  Vue 3 first
     - VueUse seems especially helpful
   - Want to upgrade to Vue 3 before adding complexity
   - We're well positioned now
