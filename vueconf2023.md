@@ -2,16 +2,15 @@
 
 ### Action Items -- Project
 
-- **Remove Vetur, install Volar** (assuming there is a vim/nvim extension)
+- **Remove Vetur, install Volar** as IDE plugin
   - Official recommendation is that Vetur is outdated, deprecated
-  - Better for composition API
   - [CoC-Volar](https://github.com/yaegassy/coc-volar)
 - **Prettier/formatting on save** -- document and force team to do this
 - **Typescript** -- can we add this to our current Vue2/Vite4 pipelines?
   - Wait until Vue 3 upgrade?
   - Investigate a single TS file and go from there
 - **Component Testing**
-  - Demonstration shows that with out setup, it should be simple/painless
+  - Demonstration shows that with our setup, it should be simple/painless
   - Create very basic component test based on a single little component
   - Better understand `cy.validate` and re-using Component test code in an E2E
 test suite
@@ -381,3 +380,32 @@ a normal e2e test
 store app
 - Live coding demonstration
   - Looks pretty nice and straight forward -- native elements
+
+### Conquering Forms in Vue -- Justin Schroeder
+
+- [Formkit.com](https://www.formkit.com)
+- Forms dominate the effort of lots of front end devs
+- Form complexity is at an all-time high and it is very painful
+  - Think back to introduction of AJAX -- the expectations became high then
+  - And expectations are way, way, way higher now
+  - Absurd amounts of HTML needed for even modest forms
+- Component libraries still do not solve 75% of form complexity and pain
+- These remaining issues: Structural Domain and Structural Problems
+- Solution?
+  - Global store?
+    - Vue Formulate 1
+    - Store models data but does not model errors/validation well (Vuex)
+  - Components? With Provide/Inject?
+    - Vue Formulate 2
+    - Components also did not model errors/validation well
+- Not everything in our component tree is in our form tree
+- Forms are their own *distinct* trees
+  - Forms have always been distinct trees
+  - Distinct from the DOM tree
+- Sales pitch for FormKit begins now
+  - A "form building framework"
+  - (not a UI library)
+  - a ton of features
+  - Part of it is Open Source
+    - With some more niche/complicated components behind a paywall
+  - Looks really nice.
