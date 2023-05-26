@@ -329,8 +329,8 @@ a normal e2e test
     - Helps you **begin the migration** from legacy app to modern (Vue) app
     - Helps keep the same mindset between apps
     - Build faster (and have fun)
-- Official Vue.js Certification program
-  - Ambivalent
+- Presenter is pushing official Vue.js Certification program
+  - I'm ambivalent about this.
   - Value proposition (time + money) -- not sure it makes sense
   - Do front end technologies and libraries still move too fast for this to be valuable?
     - React has been monolithic for years now... So perhaps not
@@ -403,4 +403,43 @@ store app
   - Looks really nice.
 
 ### The Next Vuetify -- John Leider
+
 - Version 3.0
+  - We need to get on this
+  - Seems mature
+  - The more that is shown as new/improved in V3, the more nervous I'm getting
+  about upgrading
+  - What's new and improved?
+    - Global Defaults
+      - Boolean props on their way out, maybe removed entirely compared to V2
+      - "Making it easy" to apply global styles, simplified maintenance, reduced
+      duplication
+    - Dynamic defaults based on context
+    - Overriding defaults at DEeach level
+    - Versatile theming with nested defaults
+      - granular control is the goal here. Buuuut is this too granular
+    - Aliases
+      - Create virtual components from core Vuetify
+    - "Massive" theme system
+    - Snappier animations
+    - Layout system
+      - `v-layout-item`
+      - "unlimited" custom layout combinations
+- Version 3.1 "Valkyrie"
+  - Introducing Vuetify Labs
+    - Channel for components that are not yet at feature parity with V2, but can
+    still be used
+- Version 3.2 "Orion"
+  - Vuetify Play REPL moving to replace Codepen (eventually)
+- Version 3.3 "Icarus"
+  - Form validation improvements
+  - Skeleton loader hits lab channel (good to know)
+- Version 2.7 Nirvana
+  - Will be LTS -- 18 months of bug/security fixes
+  - **WILL FINALLY HAVE A VUETIFY 2 to VUETIFY 3 UPGRADE GUIDE**
+    - This is what we have been missing
+  - End of June 2023 release date
+- Version 3.4 "Blackguard"
+  - 90% Feature parity with V2
+  - Composition API documentation examples
+  - October 31, 2023 release date
