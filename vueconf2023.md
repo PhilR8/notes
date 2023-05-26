@@ -16,6 +16,7 @@
   - Better understand `cy.validate` and re-using Component test code in an E2E
 test suite
 - **VueUse** -- research how to integrate
+  - [https://vueuse.org/](https://vueuse.org/)
   - Probably after Vue 3
   - Seems *extremely* useful
 
@@ -29,20 +30,22 @@ test suite
 
 ### Parking lot for generic thoughts
 
+- Need to prioritize Vue 3 upgrade so we can take advantage of all this stuff
 - We should investigate using TypeScript (TS)
   - How big of a lift?
   - When we upgrade to Vue 3, do it then?
 - HighCharts highlighted as having "great" Vue integration by Alex Harding
   - Keep in mind if site needs data visualizations
-- Need to fast track Vue 3 upgrade so we can take advantage of all this stuff
-- Histoire -- Vue-specific Storybook alternative (also supports Svelte)
-- Live coding exercise from Nuxt CEO makes it clear why people like TailwindCSS.
-- Nuxt CEO uses CoPilot, as shown and mentioned during his live demo
-- `pre` tag once again shown as being very useful for debugging raw text/JSON/etc
-- Highlighting here again: TailwindCSS demonstrated incredible utility for rapid
-prototyping
-  - I can see why people use it and love it.
 - Cypress-Cucumber -- tests in "human readable" code
+  - See slack convo in #coi-testing for discussion about this
+- Histoire -- Vue-specific Storybook alternative (also supports Svelte)
+  - Do we even care about Storybook at all at this point?
+  - Depending on LOE, this might be a better alternative
+- Live coding exercise from Nuxt CEO
+  - demonstrated incredible utility for rapid prototyping. 
+  - makes it clear why people like TailwindCSS.
+  - Nuxt CEO uses CoPilot, as shown and mentioned during his live demo
+- `pre` tag once again shown as being very useful for debugging raw text/JSON/etc
 
 ### Vue/web dev/etc thoughts/reminders/etc
 
